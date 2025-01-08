@@ -46,13 +46,13 @@ async function sendTelegramMessage(token, chatId, message) {
         // 显示浏览器窗口&使用自定义窗口大小
         const browser = await puppeteer.launch({ 
             headless: false, 
-            // args: [
-            //     '--no-sandbox',
-            //     '--disable-setuid-sandbox',
+             args: [
+                 '--no-sandbox',
+                 '--disable-setuid-sandbox',
             //     '--disable-dev-shm-usage',
             //     '--disable-infobars',
             //     '--disable-blink-features=AutomationControlled'
-            // ],
+             ],
             // defaultViewport: null,
             // ignoreHTTPSErrors: true
         });
